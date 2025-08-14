@@ -2,7 +2,7 @@
 
 .home {
   font-family: 'Arial', sans-serif; /* Set a clean font for the entire home */
-  color: #333; /* Default text color */
+  color: var(--brand-black-80); /* Default text color */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   position: relative;
@@ -40,8 +40,8 @@ section {
 
 /* Footer styling */
 footer {
-  background-color: #282c34; /* Dark background for footer */
-  color: #fff; /* White text color for footer */
+  background-color: var(--brand-black-80); /* Dark background for footer */
+  color: var(--brand-white-light); /* White text color for footer */
   text-align: center; /* Center text in footer */
   padding: 20px; /* Padding around footer */
 }

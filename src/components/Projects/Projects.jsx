@@ -5,75 +5,30 @@ import ProjectCard from './ProjectCard';
 const projects = [
   {
     id: 1,
-    title: 'LimieRosie Website',
-    description: 'An e-commerce website for fashion products featuring a user-friendly shopping experience with cart management, order tracking, and payment integration.',
+    title: 'Gold, Stock & Bitcoin Price Tracking Website',
+    description: 'A website that helps investors track finances, provides real-time charts with data from external APIs, and optimizes performance with Redis cache.',
     imageUrl: 'https://picsum.photos/300/200?random=1',
-    liveUrl: '#',
-    codeUrl: '#',
-    tech: ['React', 'Spring Boot', 'PostgreSQL']
-  },
-  {
-    id: 2,
-    title: 'Blog Website',
-    description: 'A personal blog platform where users can create, edit, and delete posts. Includes rich-text editing, comment functionality, and MongoDB-based storage.',
-    imageUrl: 'https://picsum.photos/300/200?random=2',
-    liveUrl: '#',
-    codeUrl: '#',
-    tech: ['React', 'Node.js', 'MongoDB']
-  },
-  {
-    id: 3,
-    title: 'ATM System',
-    description: 'The ATM system is built using a service-based architecture, focusing on user experience, security, transaction speed, and scalability for future integration with digital banking services.',
-    imageUrl: 'https://picsum.photos/300/200?random=3',
-    liveUrl: '#',
-    codeUrl: 'https://github.com/kimhongpham/ATM-SYSTEM.git',
-    tech: ['Java', 'Spring Boot', 'MySQL']
-  },
-  {
-    id: 4,
-    title: 'Banking App',
-    description: 'A mobile banking application developed with React Native, providing users with account management, fund transfers, and transaction tracking in a secure environment.',
-    imageUrl: 'https://picsum.photos/300/200?random=4',
-    liveUrl: '#',
-    codeUrl: '#',
-    tech: ['React Native', 'Spring Boot', 'PostgreSQL']
-  },
-  {
-    id: 5,
-    title: 'App Thời Trang (Mobile)',
-    description: 'Ứng dụng mua sắm thời trang trên thiết bị di động, kế thừa backend từ website, hỗ trợ thông báo đẩy và kết nối qua GraphQL/REST API.',
-    imageUrl: 'https://picsum.photos/300/200?random=5',
-    liveUrl: '#',
-    codeUrl: '#',
-    tech: ['Kotlin', 'Spring Boot', 'PostgreSQL', 'Firebase', 'GraphQL']
-  },
-  {
-    id: 6,
-    title: 'App Quản Lý Chi Tiêu Cá Nhân',
-    description: 'Ứng dụng giúp người dùng theo dõi và phân tích chi tiêu hàng ngày với biểu đồ trực quan, đồng bộ dữ liệu lên cloud và đăng nhập an toàn bằng OAuth2.',
-    imageUrl: 'https://picsum.photos/300/200?random=6',
-    liveUrl: '#',
-    codeUrl: '#',
-    tech: ['React Native', 'Spring Boot', 'MongoDB', 'OAuth2', 'Chart.js']
-  },
-  {
-    id: 7,
-    title: 'Web Phân Tích Cổ Phiếu Cơ Bản',
-    description: 'Nền tảng phân tích tài chính cho nhà đầu tư, trực quan hóa dữ liệu cổ phiếu theo thời gian thực, kết hợp cache Redis và tích hợp API bên ngoài.',
-    imageUrl: 'https://picsum.photos/300/200?random=7',
     liveUrl: '#',
     codeUrl: '#',
     tech: ['React.js', 'Spring Boot', 'PostgreSQL', 'Redis', 'Python', 'D3.js']
   },
   {
-    id: 8,
-    title: 'Web Giả Lập Đầu Tư Cổ Phiếu',
-    description: 'Website mô phỏng đầu tư chứng khoán với dữ liệu giao dịch thời gian thực, bảo mật bằng JWT và triển khai bằng Docker/Kubernetes.',
-    imageUrl: 'https://picsum.photos/300/200?random=8',
+    id: 2,
+    title: 'ATM System',
+    description: 'The ATM system is built using a service-based architecture, focusing on user experience, security, transaction speed, and scalability for future integration with digital banking services.',
+    imageUrl: 'https://picsum.photos/300/200?random=2',
     liveUrl: '#',
-    codeUrl: '#',
-    tech: ['Angular', 'Spring Boot', 'PostgreSQL', 'WebSocket', 'JWT', 'Docker']
+    codeUrl: 'https://github.com/kimhongpham/ATM-SYSTEM.git',
+    tech: ['Java', 'Spring Boot', 'MySQL', 'HTML', 'CSS', 'JavaScript']
+  },
+  {
+    id: 33,
+    title: 'Gaming Dashboard',
+    description: 'WinForms game management application: manage users, games, statistics, permissions. Supports installation on Windows, SQL Server connection.',
+    imageUrl: 'https://picsum.photos/300/200?random=3',
+    liveUrl: '#',
+    codeUrl: 'https://github.com/Beomkimhong/Desktop_A',
+    tech: ['WinForms', 'C#', 'MSSQL']
   }
 ];
 
@@ -147,13 +102,6 @@ const Projects = () => {
           </button>
         ))}
       </div>
-      {/* <input
-        className={styles.searchInput}
-        type="text"
-        placeholder="Search for projects..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      /> */}
       <div className={styles.projectsGrid}>
         {displayedProjects.slice(0, visibleCount).map(project => (
           <ProjectCard key={project.id} project={project} />

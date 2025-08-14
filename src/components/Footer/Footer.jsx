@@ -22,10 +22,6 @@ const Footer = () => {
               (+84) 703-920-317
             </a>
           </div>
-          <div className={styles.contactItem}>
-            <FaMapMarkerAlt className={styles.contactIcon} />
-            <span>Ho Chi Minh City, Vietnam</span>
-          </div>
         </div>
 
         <div className={styles.footerSection}>

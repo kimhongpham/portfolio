@@ -1,23 +1,26 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Home.module.css';
-// import Header from '../components/Header/Header'; // Bỏ dòng này
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import Education from '../components/Education/Education';
 import ContactFab from '../components/ContactForm/ContactFab';
 import Footer from '../components/Footer/Footer';
+import { AboutSection } from '../components/Hero/Hero';
+import Header from '../components/Header/Header';
 
-const Home = () => {
+const Home = ({ onToggleTheme }) => {
   const [activeSection, setActiveSection] = useState('hero');
   const heroRef = useRef();
   const projectsRef = useRef();
   const educationRef = useRef();
   const contactRef = useRef();
+  const aboutRef = useRef();
 
   useEffect(() => {
     const sections = [
       { id: 'hero', ref: heroRef },
+      { id: 'about', ref: aboutRef },
       { id: 'projects', ref: projectsRef },
       { id: 'education', ref: educationRef },
       { id: 'contact', ref: contactRef },
@@ -46,7 +49,7 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      {/* <Header activeSection={activeSection} /> */} {/* Bỏ dòng này */}
+      <Header onToggleTheme={onToggleTheme} activeSection={activeSection} />
       <main>
         <motion.section
           id="hero"
@@ -57,6 +60,16 @@ const Home = () => {
           viewport={{ once: true }}
         >
           <Hero />
+        </motion.section>
+        <motion.section
+          id="about"
+          ref={aboutRef}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.05 }}
+          viewport={{ once: true }}
+        >
+          <AboutSection />
         </motion.section>
         <motion.section
           id="projects"

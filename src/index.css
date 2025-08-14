@@ -1,11 +1,25 @@
 :root {
+  /* Brand Colors */
+  --brand-blue: #6495ED;
+  --brand-blue-light: #AFCBFF;
+  --brand-blue-dark: #3B6FCF;
+  --brand-white: #ffffff;
+  --brand-black: #000000;
+  --brand-black-80: #333333;
+  --brand-black-60: #666666;
+  --brand-black-40: #999999;
+  /* Hover & Border */
+  --brand-hover-blue: #4A80D4;
+  --brand-section-alt-bg: #F0F4FF;
+  --brand-border: #E0E0E0;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light;
-  color: #213547;
-  background-color: #ffffff;
+  color: var(--brand-black-80);
+  background-color: var(--brand-white);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,12 +32,12 @@
 
 a {
   font-weight: 500;
-  color: #6495ed;
+  color: var(--brand-blue);
   text-decoration: inherit;
   transition: color 0.2s;
 }
 a:hover {
-  color: #4a7bc8;
+  color: var(--brand-hover-blue);
   text-decoration: underline;
 }
 
@@ -44,38 +58,38 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid #6495ed;
+  border: 1px solid var(--brand-blue);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #6495ed;
-  color: #ffffff;
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
   cursor: pointer;
   transition: all 0.25s;
 }
 button:hover {
-  border-color: #4a7bc8;
-  background-color: #4a7bc8;
-  color: #ffffff;
+  border-color: var(--brand-hover-blue);
+  background-color: var(--brand-hover-blue);
+  color: var(--brand-white);
   box-shadow: 0 2px 12px rgba(100, 149, 237, 0.3);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto #6495ed;
+  outline: 4px auto var(--brand-blue);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: var(--brand-black-80);
+    background-color: var(--brand-white);
   }
   a:hover {
-    color: #4a7bc8;
+    color: var(--brand-hover-blue);
   }
   button {
-    background-color: #6495ed;
-    color: #ffffff;
+    background-color: var(--brand-blue);
+    color: var(--brand-white);
   }
 }
 
@@ -136,7 +150,7 @@ html {
   animation: fadeInSection 1s cubic-bezier(.23,1.01,.32,1) both;
   box-shadow: 0 4px 32px 0 rgba(100, 149, 237, 0.1);
   border-radius: 18px;
-  background-color: #ffffff;
+  background-color: var(--brand-white);
   border: 1px solid rgba(100, 149, 237, 0.1);
 }
 

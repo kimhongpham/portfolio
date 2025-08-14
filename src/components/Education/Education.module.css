@@ -1,6 +1,6 @@
 .skills {
   padding: 3rem 1rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%);
+  background: linear-gradient(135deg, var(--brand-white-light) 0%, var(--brand-section-alt-bg) 50%, var(--brand-white-light) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -12,7 +12,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ffffff;
+  background: var(--brand-white);
   pointer-events: none;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .skillItem {
-  background: #ffffff;
-  color: #6495ed;
+  background: var(--brand-white);
+  color: var(--brand-blue);
   padding: 0.8rem 1.6rem;
   border-radius: 28px;
   font-size: 1.05rem;
@@ -56,11 +56,11 @@
 }
 
 .skillItem:hover {
-  background: #6495ed;
-  color: #fff;
+  background: var(--brand-blue);
+  color: var(--brand-white-light);
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 8px 28px rgba(100, 149, 237, 0.25);
-  border-color: #6495ed;
+  border-color: var(--brand-blue);
 }
 
 .skillItem:hover::before {
@@ -71,7 +71,7 @@
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 2rem;
-  background: linear-gradient(90deg, #6495ed 30%, #4a7bc8 70%);
+  background: linear-gradient(90deg, var(--brand-blue) 30%, var(--brand-blue-dark) 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,7 +89,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: linear-gradient(90deg, #6495ed, #4a7bc8);
+  background: linear-gradient(90deg, var(--brand-blue), var(--brand-blue-dark));
   border-radius: 2px;
 }
 
@@ -97,16 +97,13 @@
   .skills {
     padding: 2rem 0.5rem;
   }
-  
   .skillsList {
     gap: 0.8rem 1rem;
   }
-  
   .skillItem {
     padding: 0.6rem 1.2rem;
     font-size: 0.95rem;
   }
-  
   .sectionTitle {
     font-size: 2rem;
     margin-bottom: 2rem;

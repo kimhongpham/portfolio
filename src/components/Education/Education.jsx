@@ -14,18 +14,18 @@ const education = [
   },
 ];
 
-const awards = [
-  {
-    name: 'Top 10 Student Research Award',
-    org: 'HUST',
-    year: '2021',
-  },
-  {
-    name: 'Google DSC Hackathon - 2nd Prize',
-    org: 'Google Developer Student Clubs',
-    year: '2022',
-  },
-];
+// const awards = [
+//   {
+//     name: 'Top 10 Student Research Award',
+//     org: 'HUST',
+//     year: '2021',
+//   },
+//   {
+//     name: 'Google DSC Hackathon - 2nd Prize',
+//     org: 'Google Developer Student Clubs',
+//     year: '2022',
+//   },
+// ];
 
 const Skills = () => {
   return (
@@ -40,7 +40,7 @@ const Skills = () => {
           </li>
         ))}
       </ul>
-      <h2 className={styles.sectionTitle}>Awards</h2>
+      {/* <h2 className={styles.sectionTitle}>Awards</h2>
       <ul className={styles.skillsList}>
         {awards.map((award, idx) => (
           <li key={idx} className={styles.skillItem}>
@@ -49,7 +49,7 @@ const Skills = () => {
             <span>{award.year}</span>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </section>
   );
 };
