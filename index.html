@@ -1,13 +1,521 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/src/assets/images/folder.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kimhongpham portfolio</title>
+    <title>Kim Hong Pham - Full Stack Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Full Stack Developer with experience in Java, C#, and JavaScript. Explore my portfolio, projects, and journey in web and backend development."
+    />
+    <meta
+      name="keywords"
+      content="developer, portfolio, web development, java, csharp, javascript, backend"
+    />
+    <meta name="author" content="Kim Hong Pham" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourportfolio.com/" />
+    <meta property="og:title" content="Kim Hong Pham - Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer specialized in React, Node.js and modern web technologies."
+    />
+    <meta
+      property="og:image"
+      content="https://yourportfolio.com/og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourportfolio.com/" />
+    <meta
+      property="twitter:title"
+      content="Kim Hong Pham - Backend Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Full Stack Developer specialized in React, Node.js and modern web technologies."
+    />
+    <meta
+      property="twitter:image"
+      content="https://yourportfolio.com/og-image.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="styles.css" as="style" />
+    <style>
+      :root {
+        --color-primary: #0066ff;
+        --color-dark: #0a0e27;
+        --color-darker: #050814;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--color-dark);
+        color: #ffffff;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Navigation -->
+    <nav class="modern-nav" role="navigation">
+      <div class="nav-wrapper">
+        <div class="nav-content">
+          <a href="#home" class="brand">
+            <div class="brand-icon">R</div>
+            <span class="brand-text">Kim Hong Pham</span>
+          </a>
+
+          <button class="mobile-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="nav-links">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <button class="theme-switcher">
+              <span class="theme-icon">🌙</span>
+            </button>
+            <a href="/assets/cv.pdf" class="btn-cta" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-modern">
+      <div class="hero-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text fade-in">
+            <!-- <div class="hero-badge">👋 Welcome to my portfolio</div> -->
+            <h1 class="hero-heading">
+              Hi, I'm <span class="text-gradient">Kim Hong Pham</span>
+            </h1>
+            <p class="hero-subtitle">Backend Developer</p>
+            <p class="hero-desc">
+              Building scalable web applications with clean architecture and
+              modern technologies.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">View Projects</a>
+              <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+              <!-- <div class="stat-item">
+                <div class="stat-value">3+</div>
+                <div class="stat-label">Years Experience</div>
+              </div> -->
+              <div class="stat-item">
+                <div class="stat-value">3+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">3+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual fade-in">
+            <div class="profile-card">
+              <img
+                src="\images\avatar.jpg"
+                alt="Kim Hong Pham"
+                class="profile-img"
+              />
+              <div class="profile-status">
+                <span class="status-dot"></span>
+                Available for work
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section" role="main">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+          <div class="about-image fade-in">
+            <img
+              src="\images\avatar.jpg"
+              alt="Kim Hong Pham - Developer Portrait"
+              loading="lazy"
+              width="300"
+              height="300"
+            />
+          </div>
+          <div class="about-text fade-in">
+            <p>
+              I started my programming journey with C#, building my first
+              projects entirely in it. Later, I expanded into Java, which became
+              my main language for academic and personal projects. Along the
+              way, I also worked with Node.js and JavaScript for web
+              development.
+            </p>
+            <p>
+              These experiences shaped me into a versatile developer with a
+              strong foundation in backend development, adaptability across
+              languages, and a continuous drive to learn and apply new
+              technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-container">
+          <!-- Languages & Frameworks -->
+          <div class="skill-category fade-in">
+            <h3>Languages & Frameworks</h3>
+            <div class="skill-list">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Java</span>
+              <!-- <span class="skill-tag">JavaScript</span> -->
+              <span class="skill-tag">ASP.NET Core</span>
+              <span class="skill-tag">Spring Boot</span>
+              <!-- <span class="skill-tag">React</span> -->
+              <span class="skill-tag">Node.js</span>
+              <!-- <span class="skill-tag">.NET WinForms</span> -->
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category fade-in">
+            <h3>Databases</h3>
+            <div class="skill-list">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MSSQL</span>
+              <!-- <span class="skill-tag">MongoDB (basic)</span> -->
+              <!-- <span class="skill-tag">Redis</span> -->
+            </div>
+          </div>
+
+          <!-- APIs & Architecture -->
+          <div class="skill-category fade-in">
+            <h3>APIs & Architecture</h3>
+            <div class="skill-list">
+              <span class="skill-tag">RESTful API Design</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">SOA</span>
+              <span class="skill-tag">Microservices (basic)</span>
+              <span class="skill-tag">JWT Authentication</span>
+            </div>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <!-- <div class="skill-category fade-in">
+            <h3>Cloud & DevOps</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Azure Functions</span>
+              <span class="skill-tag">Power Platform</span>
+              <span class="skill-tag">Git/GitHub Actions</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Maven</span>
+              <span class="skill-tag">Gradle</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card fade-in" role="article">
+            <div class="project-image">
+              <img
+                src="https://i.pinimg.com/736x/c0/bc/87/c0bc873dfeab2b41b9db8db85a8d830a.jpg"
+                alt="Banking Microservices App Screenshot"
+                loading="lazy"
+                width="400"
+                height="250"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    aria-label="View source code for Banking Microservices App"
+                  >
+                    <span>Code</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="project-link"
+                    aria-label="View live demo of Banking Microservices App"
+                  >
+                    <span>Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Banking Core Microservices & Flutter App
+              </h3>
+              <p class="project-description">
+                Hệ thống ngân hàng lõi được tái cấu trúc từ Monolithic (ATM
+                System cũ) sang kiến trúc **Microservices** (Auth, Account,
+                Transaction) để tăng khả năng mở rộng. Phát triển ứng dụng di
+                động **Flutter** cho phép người dùng đăng nhập, kiểm tra số dư
+                và chuyển khoản an toàn. Tích hợp **n8n** để tự động hóa gửi
+                email thông báo giao dịch.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Microservices</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">n8n</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" role="article">
+            <div class="project-image">
+              <img
+                src="https://i.pinimg.com/1200x/25/cc/4c/25cc4c39dd56db1f4cab1bbd1cc6444e.jpg"
+                alt="Stock Price Dashboard Screenshot"
+                loading="lazy"
+                width="400"
+                height="250"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    aria-label="View source code for Stock Price Dashboard"
+                  >
+                    <span>Code</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="project-link"
+                    aria-label="View live demo of Stock Price Dashboard"
+                  >
+                    <span>Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Real-time Stock Price Web Dashboard</h3>
+              <p class="project-description">
+                Ứng dụng Full-stack cho phép người dùng tra cứu **giá cổ phiếu
+                theo thời gian thực** (realtime) thông qua tích hợp API công
+                khai (Alpha Vantage/Finnhub). Backend Spring Boot xử lý việc lưu
+                **lịch sử tìm kiếm** vào PostgreSQL và tính toán **Top 5 cổ
+                phiếu** được quan tâm nhất để hiển thị trên Dashboard React.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Heroku/AWS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" role="article">
+            <div class="project-image">
+              <img
+                src="https://i.pinimg.com/1200x/e2/10/81/e210812ffb54a47f9d42748b47a996c4.jpg"
+                alt="Legacy ATM System Core Screenshot"
+                loading="lazy"
+                width="400"
+                height="250"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    aria-label="View source code for Legacy ATM System Core"
+                  >
+                    <span>Code</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="project-link"
+                    aria-label="View demo of Legacy ATM System Core"
+                  >
+                    <span>Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Legacy ATM System (Monolithic Base)</h3>
+              <p class="project-description">
+                Phiên bản hệ thống ATM ban đầu, được xây dựng theo kiến trúc
+                **Monolithic**. Dự án này là nền tảng ban đầu để phát triển các
+                nghiệp vụ cơ bản như Rút tiền, Kiểm tra số dư, và Quản lý tài
+                khoản. Đây là điểm khởi đầu cho việc **tái cấu trúc thành
+                Microservices** trong dự án Ngân hàng hiện tại (Project 1).
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Monolithic</span>
+                <span class="tech-tag">JDBC/DB</span>
+                <span class="tech-tag">Core Logic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info fade-in">
+            <h3>Let's work together</h3>
+            <p>
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a question or just want to say hi, feel free to
+              reach out!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <strong>Email</strong>
+                <a href="mailto:rosiepham0107@gmail.com"
+                  >rosiepham0107@gmail.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <strong>Phone</strong>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+              </div>
+              <div class="contact-item">
+                <strong>Location</strong>
+                <span>Hochiminh, Vietnam</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form fade-in">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  aria-required="true"
+                />
+                <span class="error-message" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  aria-required="true"
+                />
+                <span class="error-message" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  aria-required="true"
+                />
+                <span class="error-message" id="subjectError"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Kim Hong Pham. All rights reserved.</p>
+          <div class="social-links">
+            <a
+              href="https://github.com/kimhongpham"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com/in/kimhongpham"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://twitter.com/kimhongphamm"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
   </body>
 </html>
