@@ -128,14 +128,14 @@
                 <div class="stat-value">3+</div>
                 <div class="stat-label">Years Experience</div>
               </div> -->
-              <div class="stat-item">
+              <!-- <div class="stat-item">
                 <div class="stat-value">3+</div>
                 <div class="stat-label">Projects</div>
               </div>
               <div class="stat-item">
                 <div class="stat-value">3+</div>
                 <div class="stat-label">Technologies</div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="hero-visual fade-in">
@@ -197,14 +197,13 @@
           <div class="skill-category fade-in">
             <h3>Languages & Frameworks</h3>
             <div class="skill-list">
-              <span class="skill-tag">C#</span>
               <span class="skill-tag">Java</span>
-              <!-- <span class="skill-tag">JavaScript</span> -->
-              <span class="skill-tag">ASP.NET Core</span>
               <span class="skill-tag">Spring Boot</span>
-              <!-- <span class="skill-tag">React</span> -->
+              <span class="skill-tag">Spring Security</span>
+              <span class="skill-tag">React.js</span>
               <span class="skill-tag">Node.js</span>
-              <!-- <span class="skill-tag">.NET WinForms</span> -->
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">HTML/CSS/JS</span>
             </div>
           </div>
 
@@ -214,9 +213,7 @@
             <div class="skill-list">
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">MSSQL</span>
-              <!-- <span class="skill-tag">MongoDB (basic)</span> -->
-              <!-- <span class="skill-tag">Redis</span> -->
+              <span class="skill-tag">Redis</span>
             </div>
           </div>
 
@@ -225,179 +222,305 @@
             <h3>APIs & Architecture</h3>
             <div class="skill-list">
               <span class="skill-tag">RESTful API Design</span>
-              <span class="skill-tag">OOP</span>
               <span class="skill-tag">SOA</span>
-              <span class="skill-tag">Microservices (basic)</span>
+              <span class="skill-tag">MVC</span>
               <span class="skill-tag">JWT Authentication</span>
+              <span class="skill-tag">OAuth2 (Google)</span>
+              <span class="skill-tag">WebSocket</span>
             </div>
           </div>
 
-          <!-- Cloud & DevOps -->
-          <!-- <div class="skill-category fade-in">
-            <h3>Cloud & DevOps</h3>
+          <!-- Tools & DevOps -->
+          <div class="skill-category fade-in">
+            <h3>Tools & DevOps</h3>
             <div class="skill-list">
-              <span class="skill-tag">Azure Functions</span>
-              <span class="skill-tag">Power Platform</span>
-              <span class="skill-tag">Git/GitHub Actions</span>
               <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Swagger</span>
               <span class="skill-tag">Maven</span>
               <span class="skill-tag">Gradle</span>
-              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Nginx</span>
+              <span class="skill-tag">Render</span>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects section">
       <div class="container">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card fade-in" role="article">
-            <div class="project-image">
-              <img
-                src="https://i.pinimg.com/736x/c0/bc/87/c0bc873dfeab2b41b9db8db85a8d830a.jpg"
-                alt="Banking Microservices App Screenshot"
-                loading="lazy"
-                width="400"
-                height="250"
-              />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="#"
-                    class="project-link"
-                    aria-label="View source code for Banking Microservices App"
-                  >
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="project-link"
-                    aria-label="View live demo of Banking Microservices App"
-                  >
-                    <span>Demo</span>
-                  </a>
+        <div class="projects-carousel">
+          <div class="projects-container">
+            <!-- ATM SYSTEM (Original) -->
+            <article class="project-card fade-in" role="article">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/e2/10/81/e210812ffb54a47f9d42748b47a996c4.jpg"
+                  alt="ATM System Screenshot"
+                  loading="lazy"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/kimhongpham/ATM-SYSTEM"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Code</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">
-                Banking Core Microservices & Flutter App
-              </h3>
-              <p class="project-description">
-                Hệ thống ngân hàng lõi được tái cấu trúc từ Monolithic (ATM
-                System cũ) sang kiến trúc **Microservices** (Auth, Account,
-                Transaction) để tăng khả năng mở rộng. Phát triển ứng dụng di
-                động **Flutter** cho phép người dùng đăng nhập, kiểm tra số dư
-                và chuyển khoản an toàn. Tích hợp **n8n** để tự động hóa gửi
-                email thông báo giao dịch.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Spring Boot</span>
-                <span class="tech-tag">Microservices</span>
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">n8n</span>
+              <div class="project-content">
+                <h3 class="project-title">
+                  ATM System – Service-Oriented Architecture
+                </h3>
+                <p class="project-description">
+                  ATM simulation system with functions: login with PIN, withdraw
+                  money, deposit money, view transaction history. The entire
+                  backend is built with Spring Boot and JWT Authentication,
+                  communicating with Java Swing application via REST API.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Spring Security</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">SOA</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card fade-in" role="article">
-            <div class="project-image">
-              <img
-                src="https://i.pinimg.com/1200x/25/cc/4c/25cc4c39dd56db1f4cab1bbd1cc6444e.jpg"
-                alt="Stock Price Dashboard Screenshot"
-                loading="lazy"
-                width="400"
-                height="250"
-              />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="#"
-                    class="project-link"
-                    aria-label="View source code for Stock Price Dashboard"
-                  >
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="project-link"
-                    aria-label="View live demo of Stock Price Dashboard"
-                  >
-                    <span>Demo</span>
-                  </a>
+            <!-- STOCKVIEW (Original) -->
+            <article class="project-card fade-in" role="article">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/1200x/25/cc/4c/25cc4c39dd56db1f4cab1bbd1cc6444e.jpg"
+                  alt="StockView App Screenshot"
+                  loading="lazy"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/kimhongpham/StockView"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Code</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Real-time Stock Price Web Dashboard</h3>
-              <p class="project-description">
-                Ứng dụng Full-stack cho phép người dùng tra cứu **giá cổ phiếu
-                theo thời gian thực** (realtime) thông qua tích hợp API công
-                khai (Alpha Vantage/Finnhub). Backend Spring Boot xử lý việc lưu
-                **lịch sử tìm kiếm** vào PostgreSQL và tính toán **Top 5 cổ
-                phiếu** được quan tâm nhất để hiển thị trên Dashboard React.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Spring Boot</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">Heroku/AWS</span>
+              <div class="project-content">
+                <h3 class="project-title">
+                  StockView – Financial Market Tracker
+                </h3>
+                <p class="project-description">
+                  Full-stack application that allows users to track stock
+                  portfolios in real time. Integrates Finnhub API, stores data
+                  with PostgreSQL. React.js interface with light/dark mode and
+                  interactive charts.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">OAuth2</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="project-card fade-in" role="article">
-            <div class="project-image">
-              <img
-                src="https://i.pinimg.com/1200x/e2/10/81/e210812ffb54a47f9d42748b47a996c4.jpg"
-                alt="Legacy ATM System Core Screenshot"
-                loading="lazy"
-                width="400"
-                height="250"
-              />
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a
-                    href="#"
-                    class="project-link"
-                    aria-label="View source code for Legacy ATM System Core"
-                  >
-                    <span>Code</span>
-                  </a>
-                  <a
-                    href="#"
-                    class="project-link"
-                    aria-label="View demo of Legacy ATM System Core"
-                  >
-                    <span>Demo</span>
-                  </a>
+            <!-- NEWS WEBSITE (Original) -->
+            <article class="project-card fade-in" role="article">
+              <div class="project-image">
+                <img
+                  src="/images/news-website-screenshot.png"
+                  alt="News Website Screenshot"
+                  loading="lazy"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/kimhongpham/News-Web-AI"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Code</span>
+                    </a>
+                    <a
+                      href="https://news-website-deploy-iykm.onrender.com"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Demo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Legacy ATM System (Monolithic Base)</h3>
-              <p class="project-description">
-                Phiên bản hệ thống ATM ban đầu, được xây dựng theo kiến trúc
-                **Monolithic**. Dự án này là nền tảng ban đầu để phát triển các
-                nghiệp vụ cơ bản như Rút tiền, Kiểm tra số dư, và Quản lý tài
-                khoản. Đây là điểm khởi đầu cho việc **tái cấu trúc thành
-                Microservices** trong dự án Ngân hàng hiện tại (Project 1).
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Monolithic</span>
-                <span class="tech-tag">JDBC/DB</span>
-                <span class="tech-tag">Core Logic</span>
+              <div class="project-content">
+                <h3 class="project-title">AI-Powered News Website</h3>
+                <p class="project-description">
+                  News website using Node.js and MySQL, allowing users to read,
+                  comment, post articles. Integrates Google OAuth2 login and
+                  uses Hugging Face API to automatically summarize article
+                  content.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">Google OAuth2</span>
+                  <span class="tech-tag">Hugging Face API</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+
+            <!-- DUPLICATE CARDS FOR SEAMLESS LOOP -->
+
+            <!-- ATM SYSTEM (Duplicate) -->
+            <article class="project-card fade-in" role="article">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/e2/10/81/e210812ffb54a47f9d42748b47a996c4.jpg"
+                  alt="ATM System Screenshot"
+                  loading="lazy"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/kimhongpham/ATM-SYSTEM"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Code</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  ATM System – Service-Oriented Architecture
+                </h3>
+                <p class="project-description">
+                  ATM simulation system with functions: login with PIN, withdraw
+                  money, deposit money, view transaction history. The entire
+                  backend is built with Spring Boot and JWT Authentication,
+                  communicating with Java Swing application via REST API.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Spring Security</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">SOA</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- STOCKVIEW (Duplicate) -->
+            <article class="project-card fade-in" role="article">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/1200x/25/cc/4c/25cc4c39dd56db1f4cab1bbd1cc6444e.jpg"
+                  alt="StockView App Screenshot"
+                  loading="lazy"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/kimhongpham/StockView"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Code</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">
+                  StockView – Financial Market Tracker
+                </h3>
+                <p class="project-description">
+                  Full-stack application that allows users to track stock
+                  portfolios in real time. Integrates Finnhub API, stores data
+                  with PostgreSQL. React.js interface with light/dark mode and
+                  interactive charts.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">OAuth2</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- NEWS WEBSITE (Duplicate) -->
+            <article class="project-card fade-in" role="article">
+              <div class="project-image">
+                <img
+                  src="/images/news-website-screenshot.png"
+                  alt="News Website Screenshot"
+                  loading="lazy"
+                  width="400"
+                  height="250"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/kimhongpham/News-Web-AI"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Code</span>
+                    </a>
+                    <a
+                      href="https://news-website-deploy-iykm.onrender.com"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <span>Demo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">AI-Powered News Website</h3>
+                <p class="project-description">
+                  News website using Node.js and MySQL, allowing users to read,
+                  comment, post articles. Integrates Google OAuth2 login and
+                  uses Hugging Face API to automatically summarize article
+                  content.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">Google OAuth2</span>
+                  <span class="tech-tag">Hugging Face API</span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -423,7 +546,7 @@
               </div>
               <div class="contact-item">
                 <strong>Phone</strong>
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+1234567890">+84 703 920 317</a>
               </div>
               <div class="contact-item">
                 <strong>Location</strong>
