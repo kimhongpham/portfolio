@@ -3,44 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kim Hong Pham - Full Stack Developer Portfolio</title>
+    <title>Kim Hong Pham – Backend Developer Intern</title>
     <meta
       name="description"
-      content="Full Stack Developer with experience in Java, C#, and JavaScript. Explore my portfolio, projects, and journey in web and backend development."
+      content="Backend Developer Intern specializing in Java, Spring Boot, RESTful APIs, PostgreSQL, and full-stack projects with React.js."
     />
     <meta
-      name="keywords"
-      content="developer, portfolio, web development, java, csharp, javascript, backend"
+      property="og:title"
+      content="Kim Hong Pham – Backend Developer Intern"
     />
-    <meta name="author" content="Kim Hong Pham" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourportfolio.com/" />
-    <meta property="og:title" content="Kim Hong Pham - Full Stack Developer" />
-    <meta
-      property="og:description"
-      content="Full Stack Developer specialized in React, Node.js and modern web technologies."
-    />
-    <meta
-      property="og:image"
-      content="https://yourportfolio.com/og-image.jpg"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://yourportfolio.com/" />
     <meta
       property="twitter:title"
-      content="Kim Hong Pham - Backend Developer"
+      content="Kim Hong Pham – Backend Developer Intern"
+    />
+    <meta
+      property="og:description"
+      content="Experienced in Java backend development, RESTful APIs, PostgreSQL, and building full-stack applications with React.js."
     />
     <meta
       property="twitter:description"
-      content="Full Stack Developer specialized in React, Node.js and modern web technologies."
-    />
-    <meta
-      property="twitter:image"
-      content="https://yourportfolio.com/og-image.jpg"
+      content="Experienced in Java backend development, RESTful APIs, PostgreSQL, and building full-stack applications with React.js."
     />
 
     <!-- Favicon -->
@@ -114,11 +96,12 @@
             <h1 class="hero-heading">
               Hi, I'm <span class="text-gradient">Kim Hong Pham</span>
             </h1>
-            <p class="hero-subtitle">Backend Developer</p>
+            <p class="hero-subtitle">Backend Developer Intern</p>
             <p class="hero-desc">
-              Building scalable web applications with clean architecture and
-              modern technologies.
+              Building scalable web applications with Java, Spring Boot, RESTful
+              APIs, PostgreSQL, and React.js front-end.
             </p>
+
             <div class="hero-actions">
               <a href="#projects" class="btn-primary">View Projects</a>
               <a href="#contact" class="btn-secondary">Get In Touch</a>
@@ -171,17 +154,15 @@
           </div>
           <div class="about-text fade-in">
             <p>
-              I started my programming journey with C#, building my first
-              projects entirely in it. Later, I expanded into Java, which became
-              my main language for academic and personal projects. Along the
-              way, I also worked with Node.js and JavaScript for web
-              development.
+              I started programming with C#, then focused on Java as my main
+              backend language, building RESTful APIs and database-driven
+              systems. I also gained experience in Node.js and React.js for
+              full-stack web development.
             </p>
             <p>
-              These experiences shaped me into a versatile developer with a
-              strong foundation in backend development, adaptability across
-              languages, and a continuous drive to learn and apply new
-              technologies.
+              These projects, including StockView and News Website, strengthened
+              my backend skills, understanding of clean architecture, and
+              ability to integrate front-end interfaces when needed.
             </p>
           </div>
         </div>
@@ -200,9 +181,8 @@
               <span class="skill-tag">Java</span>
               <span class="skill-tag">Spring Boot</span>
               <span class="skill-tag">Spring Security</span>
-              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">React + TypeScript</span>
               <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">TypeScript</span>
               <span class="skill-tag">HTML/CSS/JS</span>
             </div>
           </div>
@@ -213,7 +193,7 @@
             <div class="skill-list">
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">MSSQL</span>
             </div>
           </div>
 
@@ -239,7 +219,6 @@
               <span class="skill-tag">Swagger</span>
               <span class="skill-tag">Maven</span>
               <span class="skill-tag">Gradle</span>
-              <span class="skill-tag">Nginx</span>
               <span class="skill-tag">Render</span>
             </div>
           </div>
@@ -254,10 +233,11 @@
         <div class="projects-carousel">
           <div class="projects-container">
             <!-- ATM SYSTEM (Original) -->
+            <!-- ATM SYSTEM -->
             <article class="project-card fade-in" role="article">
               <div class="project-image">
                 <img
-                  src="https://i.pinimg.com/736x/e2/10/81/e210812ffb54a47f9d42748b47a996c4.jpg"
+                  src="images/ATM_System_Screenshot.png"
                   alt="ATM System Screenshot"
                   loading="lazy"
                   width="400"
@@ -276,31 +256,28 @@
                 </div>
               </div>
               <div class="project-content">
-                <h3 class="project-title">
-                  ATM System – Service-Oriented Architecture
-                </h3>
+                <h3 class="project-title">ATM System – Backend Developer</h3>
                 <p class="project-description">
-                  ATM simulation system with functions: login with PIN, withdraw
-                  money, deposit money, view transaction history. The entire
-                  backend is built with Spring Boot and JWT Authentication,
-                  communicating with Java Swing application via REST API.
+                  Built a Java ATM simulation with PIN login, balance
+                  inquiry, withdrawal, deposit, and error handling (invalid PIN,
+                  insufficient balance). Implemented layered architecture with
+                  Account and Transaction classes. Integrated database
+                  persistence using JDBC to ensure consistent state management
+                  across user sessions.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">Java</span>
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">Spring Security</span>
                   <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">JWT</span>
-                  <span class="tech-tag">SOA</span>
+                  <span class="tech-tag">JDBC</span>
                 </div>
               </div>
             </article>
 
-            <!-- STOCKVIEW (Original) -->
+            <!-- STOCKVIEW -->
             <article class="project-card fade-in" role="article">
               <div class="project-image">
                 <img
-                  src="https://i.pinimg.com/1200x/25/cc/4c/25cc4c39dd56db1f4cab1bbd1cc6444e.jpg"
+                  src="https://github.com/kimhongpham/StockView/raw/main/docs/screenshots/dashboard.png"
                   alt="StockView App Screenshot"
                   loading="lazy"
                   width="400"
@@ -319,27 +296,30 @@
                 </div>
               </div>
               <div class="project-content">
-                <h3 class="project-title">
-                  StockView – Financial Market Tracker
-                </h3>
+                <h3 class="project-title">Stock View – Fullstack</h3>
                 <p class="project-description">
-                  Full-stack application that allows users to track stock
-                  portfolios in real time. Integrates Finnhub API, stores data
-                  with PostgreSQL. React.js interface with light/dark mode and
-                  interactive charts.
+                  Developed a fullstack real-time market tracking system with
+                  Spring Boot REST API + WebSocket, secured using JWT and Google
+                  OAuth2. Integrated Finnhub API for live stock data, and used
+                  PostgreSQL for asset and user storage. Built a responsive
+                  React + TypeScript UI for charts, watchlist management, and
+                  theme switching; packaged entire system with Docker Compose.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">Java</span>
                   <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">PostgreSQL</span>
                   <span class="tech-tag">React.js</span>
                   <span class="tech-tag">TypeScript</span>
-                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">JWT</span>
                   <span class="tech-tag">OAuth2</span>
+                  <span class="tech-tag">WebSocket</span>
+                  <span class="tech-tag">Docker</span>
                 </div>
               </div>
             </article>
 
-            <!-- NEWS WEBSITE (Original) -->
+            <!-- NEWS WEBSITE -->
             <article class="project-card fade-in" role="article">
               <div class="project-image">
                 <img
@@ -352,7 +332,7 @@
                 <div class="project-overlay">
                   <div class="project-links">
                     <a
-                      href="https://github.com/kimhongpham/News-Web-AI"
+                      href="https://github.com/kimhongpham/news-website"
                       class="project-link"
                       target="_blank"
                     >
@@ -369,19 +349,22 @@
                 </div>
               </div>
               <div class="project-content">
-                <h3 class="project-title">AI-Powered News Website</h3>
+                <h3 class="project-title">News Website – Backend Developer</h3>
                 <p class="project-description">
-                  News website using Node.js and MySQL, allowing users to read,
-                  comment, post articles. Integrates Google OAuth2 login and
-                  uses Hugging Face API to automatically summarize article
-                  content.
+                  Built backend RESTful APIs using pure Node.js to handle
+                  routing, controllers, middlewares, and request parsing
+                  manually. Designed and implemented CRUD operations for
+                  articles, categories, comments, and user management with
+                  role-based access control (admin & visitor). Deployed the
+                  backend on Render with a modular and maintainable
+                  architecture.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">Node.js</span>
                   <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">REST API</span>
                   <span class="tech-tag">JWT</span>
                   <span class="tech-tag">Google OAuth2</span>
-                  <span class="tech-tag">Hugging Face API</span>
                 </div>
               </div>
             </article>
@@ -389,10 +372,11 @@
             <!-- DUPLICATE CARDS FOR SEAMLESS LOOP -->
 
             <!-- ATM SYSTEM (Duplicate) -->
+            <!-- ATM SYSTEM -->
             <article class="project-card fade-in" role="article">
               <div class="project-image">
                 <img
-                  src="https://i.pinimg.com/736x/e2/10/81/e210812ffb54a47f9d42748b47a996c4.jpg"
+                  src="images/ATM_System_Screenshot.png"
                   alt="ATM System Screenshot"
                   loading="lazy"
                   width="400"
@@ -411,31 +395,28 @@
                 </div>
               </div>
               <div class="project-content">
-                <h3 class="project-title">
-                  ATM System – Service-Oriented Architecture
-                </h3>
+                <h3 class="project-title">ATM System – Backend Developer</h3>
                 <p class="project-description">
-                  ATM simulation system with functions: login with PIN, withdraw
-                  money, deposit money, view transaction history. The entire
-                  backend is built with Spring Boot and JWT Authentication,
-                  communicating with Java Swing application via REST API.
+                  Built a Java ATM simulation with PIN login, balance
+                  inquiry, withdrawal, deposit, and error handling (invalid PIN,
+                  insufficient balance). Implemented layered architecture with
+                  Account and Transaction classes. Integrated database
+                  persistence using JDBC to ensure consistent state management
+                  across user sessions.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">Java</span>
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">Spring Security</span>
                   <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">JWT</span>
-                  <span class="tech-tag">SOA</span>
+                  <span class="tech-tag">JDBC</span>
                 </div>
               </div>
             </article>
 
-            <!-- STOCKVIEW (Duplicate) -->
+            <!-- STOCKVIEW -->
             <article class="project-card fade-in" role="article">
               <div class="project-image">
                 <img
-                  src="https://i.pinimg.com/1200x/25/cc/4c/25cc4c39dd56db1f4cab1bbd1cc6444e.jpg"
+                  src="https://github.com/kimhongpham/StockView/raw/main/docs/screenshots/dashboard.png"
                   alt="StockView App Screenshot"
                   loading="lazy"
                   width="400"
@@ -454,27 +435,30 @@
                 </div>
               </div>
               <div class="project-content">
-                <h3 class="project-title">
-                  StockView – Financial Market Tracker
-                </h3>
+                <h3 class="project-title">Stock View – Fullstack</h3>
                 <p class="project-description">
-                  Full-stack application that allows users to track stock
-                  portfolios in real time. Integrates Finnhub API, stores data
-                  with PostgreSQL. React.js interface with light/dark mode and
-                  interactive charts.
+                  Developed a fullstack real-time market tracking system with
+                  Spring Boot REST API + WebSocket, secured using JWT and Google
+                  OAuth2. Integrated Finnhub API for live stock data, and used
+                  PostgreSQL for asset and user storage. Built a responsive
+                  React + TypeScript UI for charts, watchlist management, and
+                  theme switching; packaged entire system with Docker Compose.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">Java</span>
                   <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">PostgreSQL</span>
                   <span class="tech-tag">React.js</span>
                   <span class="tech-tag">TypeScript</span>
-                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">JWT</span>
                   <span class="tech-tag">OAuth2</span>
+                  <span class="tech-tag">WebSocket</span>
+                  <span class="tech-tag">Docker</span>
                 </div>
               </div>
             </article>
 
-            <!-- NEWS WEBSITE (Duplicate) -->
+            <!-- NEWS WEBSITE -->
             <article class="project-card fade-in" role="article">
               <div class="project-image">
                 <img
@@ -487,7 +471,7 @@
                 <div class="project-overlay">
                   <div class="project-links">
                     <a
-                      href="https://github.com/kimhongpham/News-Web-AI"
+                      href="https://github.com/kimhongpham/news-website"
                       class="project-link"
                       target="_blank"
                     >
@@ -504,19 +488,22 @@
                 </div>
               </div>
               <div class="project-content">
-                <h3 class="project-title">AI-Powered News Website</h3>
+                <h3 class="project-title">News Website – Backend Developer</h3>
                 <p class="project-description">
-                  News website using Node.js and MySQL, allowing users to read,
-                  comment, post articles. Integrates Google OAuth2 login and
-                  uses Hugging Face API to automatically summarize article
-                  content.
+                  Built backend RESTful APIs using pure Node.js to handle
+                  routing, controllers, middlewares, and request parsing
+                  manually. Designed and implemented CRUD operations for
+                  articles, categories, comments, and user management with
+                  role-based access control (admin & visitor). Deployed the
+                  backend on Render with a modular and maintainable
+                  architecture.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">Node.js</span>
                   <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">REST API</span>
                   <span class="tech-tag">JWT</span>
                   <span class="tech-tag">Google OAuth2</span>
-                  <span class="tech-tag">Hugging Face API</span>
                 </div>
               </div>
             </article>
